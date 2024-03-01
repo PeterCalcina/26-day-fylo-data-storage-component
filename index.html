@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nombre del autor">
+    <meta name="description" content="Descripcion del proyecto">
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Fylo Data Storage Component</title>
+</head>
+
+<body>
+
+    <main class="container">
+        <section class="fylo">
+            <img class="fylo__logo" src="images/logo.svg" alt="Logo">
+
+            <div class="fylo__icons">
+                <div class="fylo__icon__container">
+                    <img src="images/icon-document.svg" alt="Icon Document">
+                </div>
+
+                <div class="fylo__icon__container">
+                    <img src="images/icon-folder.svg" alt="Icon Folder">
+                </div>
+
+                <div class="fylo__icon__container">
+                    <img src="images/icon-upload.svg" alt="Icon upload">
+                </div>
+            </div>
+        </section>
+
+        <section class="storage">
+            <div class="storage__left">
+                <h2 class="storage__gb-left">185</h2>
+                <span>GB LEFT</span>
+            </div>
+
+            <p class="storage__used">
+                You’ve used <span class="span_gb">815 GB</span> of your storage 
+            </p>
+
+            <div class="storage__progress">
+                <div class="storage__progress__bar">
+                    <div class="storage__progress__bar__fill" style="--width-fill: 50%"></div>
+                </div>
+                <span class="storage__gb-min">0 GB</span>
+                <span class="storage__gb-max">1000 GB</span>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
