@@ -26,8 +26,13 @@ let interval_used = setInterval(() => {
 // Intervalo para cargar la barra de progreso
 let progress_cont = 0;
 let interval_progress = setInterval(() => {
-  if(progress_cont === 81.5) clearInterval(interval_progress);
+  let total_percent = totalPercent();
+  if(progress_cont === total_percent) clearInterval(interval_progress);
   storage__progress.style.cssText = '--width-fill: ' + progress_cont + '%;';
   progress_cont += .5;
-}, 10);
+}, 10); 
+
+function totalPercent() {
+  return (100 * 815) / 1000;
+}
 
